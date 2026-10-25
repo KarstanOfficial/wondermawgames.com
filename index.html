@@ -3,85 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wonder Maw Games</title>
-  <meta name="description" content="Wonder Maw Games is an independent game studio building atmospheric worlds in Unreal Engine.">
-  <meta property="og:title" content="Wonder Maw Games">
-  <meta property="og:description" content="An independent studio building atmospheric worlds in Unreal Engine.">
+  <title>Wondermaw Games</title>
+  <meta name="description" content="Wondermaw Games is an independent game studio building worlds in Unreal Engine.">
+  <meta property="og:title" content="Wondermaw Games">
+  <meta property="og:description" content="An independent game studio building worlds in Unreal Engine.">
   <meta property="og:url" content="https://wondermawgames.com/">
+  <meta property="og:image" content="https://wondermawgames.com/img/logo.png">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0d0b10">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#240a41">
+  <link rel="icon" href="/img/mark.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/WondermawDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="nav">
     <a class="brand" href="/">
-      <img src="/favicon.svg" alt="" width="28" height="28">
-      <span>Wonder Maw</span>
+      <img src="/img/mark.png" alt="" width="44" height="37">
+      <span>Wondermaw</span>
     </a>
     <nav>
       <a href="#games">Games</a>
+      <a href="#news">News</a>
       <a href="#studio">Studio</a>
-      <a href="#contact">Contact</a>
+      <a href="#support">Support</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="glow" aria-hidden="true"></div>
-      <p class="eyebrow">Independent game studio</p>
-      <h1>Wonder Maw<br><span>Games</span></h1>
-      <p class="lede">We build atmospheric, hand-crafted worlds in Unreal Engine. Places worth getting lost in.</p>
-      <div class="cta">
-        <a class="btn primary" href="#games">See what we're making</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
+      <div class="hero-inner">
+        <img class="hero-mark" src="/img/mark.png" alt="The Wondermaw monster" width="400" height="333">
+        <h1>Wondermaw<small>Games</small></h1>
+        <p class="lede">An independent studio making worlds worth getting swallowed by.</p>
+        <div class="cta">
+          <a class="btn orange" href="#games">Our games</a>
+          <a class="btn outline" href="#support">Get in touch</a>
+        </div>
       </div>
     </section>
 
     <section id="games" class="section">
-      <h2>Games</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-art art-1" aria-hidden="true"></div>
-          <div class="card-body">
-            <p class="tag">In development</p>
+      <div class="section-head">
+        <h2>Games</h2>
+        <p>What's cooking in the maw</p>
+      </div>
+      <div class="games">
+        <article class="tile featured">
+          <div class="tile-art art-1" aria-hidden="true"></div>
+          <div class="tile-info">
+            <span class="pill">In development</span>
             <h3>Our first title</h3>
-            <p>Currently in early development in Unreal Engine 5. More soon.</p>
+            <p>Being built right now in Unreal Engine 5. Screenshots and a name are on the way.</p>
           </div>
         </article>
-        <article class="card muted">
-          <div class="card-art art-2" aria-hidden="true"></div>
-          <div class="card-body">
-            <p class="tag">Coming later</p>
+        <article class="tile">
+          <div class="tile-art art-2" aria-hidden="true"></div>
+          <div class="tile-info">
+            <span class="pill dim">Coming later</span>
             <h3>Untitled</h3>
-            <p>Something else is stirring in the maw.</p>
+            <p>Something else is stirring.</p>
           </div>
+        </article>
+        <article class="tile">
+          <div class="tile-art art-3" aria-hidden="true"></div>
+          <div class="tile-info">
+            <span class="pill dim">Secret</span>
+            <h3>???</h3>
+            <p>You'll have to wait and see.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="section-head">
+        <h2>News</h2>
+        <p>Updates from the studio</p>
+      </div>
+      <div class="news">
+        <article class="post">
+          <time datetime="2026-10-25">25 October 2026</time>
+          <h3>Wondermaw has a home</h3>
+          <p>Our website is live. This is where we'll share devlogs, screenshots and release news as our first game takes shape.</p>
+        </article>
+        <article class="post soon">
+          <h3>Devlog #1</h3>
+          <p>Coming soon.</p>
         </article>
       </div>
     </section>
 
     <section id="studio" class="section studio">
-      <h2>The studio</h2>
-      <p>Wonder Maw Games is a small independent studio. We care about mood, light and the quiet moments between the action, and we build everything in Unreal Engine 5.</p>
-      <ul class="pillars">
-        <li><strong>Atmosphere first</strong><span>Lighting, sound and place carry the story.</span></li>
-        <li><strong>Hand-crafted</strong><span>Every corner is built with intent.</span></li>
-        <li><strong>Built in the open</strong><span>Follow along as the games take shape.</span></li>
-      </ul>
+      <div class="studio-text">
+        <h2>The studio</h2>
+        <p>Wondermaw Games is a small independent studio. We build everything in Unreal Engine 5, and we care about atmosphere, mood and making places that feel alive.</p>
+        <ul class="facts">
+          <li><b>UE5</b><span>Engine</span></li>
+          <li><b>Indie</b><span>And proud</span></li>
+          <li><b>2026</b><span>Founded</span></li>
+        </ul>
+      </div>
+      <img class="studio-logo" src="/img/logo.png" alt="Wondermaw Games logo" width="512" height="512" loading="lazy">
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Contact &amp; support</h2>
-      <p>Need help, have feedback, or just curious? Our support team reads every message.</p>
-      <a class="btn primary" href="mailto:support@wondermawgames.com">support@wondermawgames.com</a>
+    <section id="support" class="support">
+      <h2>Need a hand?</h2>
+      <p>Bugs, questions, press or feedback. Our support team reads every message.</p>
+      <a class="btn purple" href="mailto:support@wondermawgames.com">support@wondermawgames.com</a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="year">2026</span> Wonder Maw Games · <a href="mailto:support@wondermawgames.com">support@wondermawgames.com</a></p>
+    <a class="brand" href="/">
+      <img src="/img/mark.png" alt="" width="44" height="37">
+      <span>Wondermaw</span>
+    </a>
+    <p>&copy; <span id="year">2026</span> Wondermaw Games · <a href="mailto:support@wondermawgames.com">support@wondermawgames.com</a></p>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
