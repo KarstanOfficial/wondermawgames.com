@@ -186,3 +186,7 @@ h1 small { display: block; font-size: 0.28em; letter-spacing: 0.4em; margin-top:
   .nav nav { font-size: 0.95rem; }
   .btn.purple { font-size: 0.9rem; }
 }
+
+/* Email addresses use the body font so the @ stays readable */
+.btn.email { font-family: "Nunito", system-ui, sans-serif; font-weight: 900; font-size: 1.05rem; text-transform: none; letter-spacing: 0.01em; }
+@media (max-width: 560px) { .btn.email { font-size: 0.95rem; } }
